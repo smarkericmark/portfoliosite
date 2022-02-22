@@ -1,0 +1,70 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="testhome">
+</div>
+<div class="about">
+	<h1>Education & Certifications</h1>
+	<div class="introduction">
+	<div class="aboutButtonBox">
+		<button class="aboutButton" id="currentLifeB" onclick="aboutClickOne()"><span>Formal</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="aboutClickTwo()"><span>Certifications</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="aboutClickThree()"><span>Courses</span></button>
+
+
+	</div>
+
+	<div class="aboutWordBox">
+	<div class="nothidden" id="aboutIntroBlurb">
+		<p class="aboutIntro" id=aboutBox><b>Click the Buttons on the Left to Discover More.</b></p>
+		
+	</div>
+
+	<div class="hidden" id="aboutBlurbOne">
+		<div class="educationSpecs">
+		<br>
+		<p><b>Certificate in Computer Security and Digital Forensics</b></p>
+		<p><i>Ryerson University, Toronto, Ontario</i></p>
+		<br>
+		<p><b>Bachelor of Commerce (Honours)</b></p>
+		<p><i>University of Ontario Institute of Technology, Oshawa, Ontario</i></p>
+		<br>
+		<p><b>Business Administration</b></p>
+		<p><i>Durham College, Oshawa, Ontario</i></p>
+	</div>	
+	</div>
+
+	<div class="hidden" id="aboutBlurbTwo">
+	
+	<div class="cert">
+		<img src="/static/pics/CompTIA_A_2B.png">
+	</div>
+	<div class="cert">
+		<img src="/static/pics/CompTIA_Network_2B.png">
+	</div>
+	<div class="cert">
+		<img src="/static/pics/CompTIA_Security_2B.png">
+	</div>
+	</div>
+
+	<div class="hidden" id="aboutBlurbThree">
+		<p>These courses were critical in helping me establish the foundational knowledge required to start my self-learning journey</p>
+		<div class="courseList">
+		<ul>
+			<li><a href="https://www.udemy.com/course/complete-python-bootcamp" target="_blank"> Complete Python Bootcamp From Zero to Hero in Python by Pierian Data Inc</a></li>
+			<li><a href="https://www.udemy.com/course/linux-privilege-escalation/" target="_blank">Linux Privilege Escalation by Tib3rius</a></li>
+			<li><a href="https://www.udemy.com/course/windows-privilege-escalation/" target="_blank">Windows Privilege Escalation by Tib3rius</a></li>
+			<li><a href="https://www.udemy.com/course/the-python-pro-course/" target="_blank">Advanced Python by Ardit Sulce</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course" target="_blank">Practical Ethical Hacking by TCM Academy</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/windows-privilege-escalation-for-beginners" target="_blank">Windows Privilege Escalation for Beginners by TCM Academy</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/linux-privilege-escalation" target="_blank">Linux Privilege Escalation for Beginners by TCM Academy</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/osint-fundamentals
+" target="_blank">Open-Source Intelligence (OSINT) Fundamentals by TCM Academy</a></li>
+		</ul>
+	</div>
+	</div>
+
+	</div>
+	</div>	
+	</div>
+</div>
+{%endblock%}

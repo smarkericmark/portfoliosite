@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: seashell;
+  background-color: #645986;
+  background-image: url(city.jpg);
+  position: relative;
+
+  }
+
+/*
+ * Formatting the header area
+ */
+
+header{
+  background-color: #4E0250;
+  height: 60px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+  position: fixed;
+  z-index: 3;
+}
+
+footer {
+  background-color: #4E0250;
+  margin-top: 600px;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  position: absolute;
+  z-index: 3;
+}
+
+header h1.logo  {
+  margin: 0;
+  font-size: 54px;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 5px;
+}
+
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Center the body content
+ */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.testhome {
+  margin-top: 67px;
+  padding: 60px 0 30px 0;
+  height:  435px;
+  width: 1200px;
+  background-color: #801A86;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  transform: skew(-11deg);
+  z-index: 1;
+  position: absolute;
+  opacity: .9;
+}
+
+.testback {
+  z-index: 0;
+  height: 400px;
+  width: 600px;
+  position: relative;
+
+}
+
+div.home, div.about, div.eduCerts, div.skills, div.projects {
+  margin-top: 67px;
+  height:  465px;
+  width: 1200px;
+  padding: 5px 0 0px 0;
+  /*background-color: darkred;*/
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  /*border: 3px white solid;*/
+  position: absolute;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #8FE388;
+  text-shadow: 1px 1px gray;
+  /*border: 3px white solid;*/
+
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+}
+
+.menu {
+  
+  margin-top: 16px;
+  display: inline-block;
+  float: right;
+}
+
+
+.menu li {
+  display: inline;
+}
+
+.menu li + li {
+  margin-left: 35px;
+}
+
+.menu li a {
+  color: #444;
+  text-decoration: none;
+  font-size: 18px;
+  color: seashell;
+}
+
+.menu li a:hover {
+  color: #8FE388;
+  text-shadow: 1px 1px gray;
+}
+
+.menu li a:active {
+  color: #4E0250;
+  text-shadow: 0px 0px #4E0250;
+}
+
+.fmenu li a:hover {
+  color: #8FE388;
+  text-shadow: 1px 1px gray;
+}
+
+.fmenu li a:active {
+  color: #4E0250;
+  text-shadow: 0px 0px #4E0250;
+}
+
+img {
+  width: 18%;
+  height: auto;
+  margin-top: 30px;
+  margin-right: 22px;
+
+  border-radius: 15%;
+
+  
+  
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transform: skewY(11deg)
+  margin: 0 auto;
+}
+
+.introblurbs {
+    width: 500px;
+    height: 240px;
+    padding: 5px;
+    margin: 50px 40px 10px 40px;
+    font-size: 22px;
+}
+
+/*
+Footer Menu Formatting
+*/
+
+.fmenu {
+  float: left;
+  margin-top: 8px;
+}
+
+
+.fmenu li {
+  display: inline;
+}
+
+.fmenu li + li {
+  margin-left: 300px;
+}
+
+.fmenu li a {
+  color: #444;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  float: none;
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  color: seashell;
+  
+}
+
+.trueBottom {
+  width: 100%;
+  height: 88px;
+  background-color: #801A86;
+  position: absolute;
+  margin-top: 30px;
+  z-index: 4;
+  opacity: .5;
+}
+
+
+/*
+ * About / Edu Certs / skills Section shared CSS
+ */
+
+
+
+.aboutButtonBox {
+  width: 250px;
+  height: 400px;
+  padding: 5px;
+  margin: 70px 10px 10px 40px;
+  /*border: 3px white solid;*/
+}
+
+.aboutWordBox {
+  width: 825px;
+  height: 400px;
+  padding: 5px;
+  margin: 10px 60px 10px 20px;
+  font-size: 22px;
+  font-weight: bolder;
+  /*border: 3px white solid;*/ 
+}
+
+.aboutButton{
+  background-color: #58BC82; /* Green */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  border: none;
+  width: 240px;
+  color: white;
+  margin: 25px 0px;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+
+}
+
+.aboutButton:hover{
+  background-color: #645986; 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+
+.aboutButton:active{
+  padding-right: 38px;
+  background-color: #4E0250; 
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.24), 0 0px 0px 0 rgba(0,0,0,0.19);
+}
+
+.aboutIntro {
+  margin-top: 55px;
+  margin-left: -20px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 28px;
+  opacity: .4;
+}
+
+.hidden {
+  display: none;
+}
+
+.nothidden {
+  display: all;
+}
+
+
+/*
+ *  About Section
+ */
+
+.highlightstext {
+  color: #8FE388;
+  text-shadow: 1px 1px gray;
+}
+
+.aboutList1{
+  margin-top: -15px;
+}
+
+.aboutList2{
+  margin-top: -15px;
+}
+
+.aboutList1 li{
+  padding: 6px;
+ }
+
+.aboutList2 li{
+  padding: 12px;
+ }
+
+.aboutList3 li{
+  padding: 15px;
+ }
+
+ /*
+ *  Education and Certifications
+ */
+
+
+.educationSpecs {
+  padding-left: 60px;
+}
+
+.cert img {
+    width: 75%;
+    height: auto;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.cert {
+    /*border: 3px white solid;*/
+    width: 30%;
+    padding-top: 80px;
+    margin: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    }
+
+.courseList li{
+  padding-top: 12px;
+}
+
+.courseList li a{
+  color: seashell;
+}
+
+.courseList li a:hover{
+  color: #58BC82;
+}
+
+.courseList li a:active{
+  color: #4E0250;
+}
+
+
+
+
+ /*
+ *  Skills
+ */
+
+.skillList {
+    /*border: 3px white solid;*/
+    width: 43%;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 15px;
+    display: inline-block;
+
+    }
+
+  .skillList li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+
+
