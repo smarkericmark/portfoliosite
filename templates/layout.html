@@ -2,41 +2,383 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Flask App</title>
+	<title>Mark Berg</title>
 	<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
 	 <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </head>
 <body>
 	<header>
-		<div class="container">
+		
 			<h1 class="logo">Mark Berg</h1>
-			<strong><nav>
-				<ul class ="menu">
-					<li><a href="{{url_for('home')}}">Home</a></li>
-					<li><a href="{{url_for('about')}}">About</a></li>
-					<li><a href="{{url_for('eduCerts')}}">Education & Certs</a></li>
-					<li><a href="{{url_for('skills')}}">Skills</a></li>
-					<!--<li><a href="{{url_for('projects')}}">Projects</a></li>-->					
-				</ul>
-			</nav></strong>
-		</div>
+			<nav>
+					<span><a href="{{url_for('home', _anchor='HomePage')}}">Home</a></span>
+					<span><a href="{{url_for('home', _anchor='AboutSection')}}">About</a></span>
+					<span><a href="{{url_for('home', _anchor='EducationSection')}}">Education</a></span>
+					<span><a href="{{url_for('home', _anchor='SkillSection')}}">Skills</a></span>
+					
+			</nav>
+		
 	</header>
-	<div class="container">
-		{%block content%}
-		{%endblock%}
+	
+	
+		<section id="HomePage">
+
+<div class="homebox">
+<div class="curvebox">
+</div>
+<div class="home">
+
+	<div class="pageTitle">
+	<h1>Thank you for visiting my website.</h1>
 	</div>
-</body>
-<footer>
-	<div class="container">
-			<strong><nav>
-				<ul class ="fmenu">
-					<li><a href="https://www.linkedin.com/in/markcyberanalyst/" target="_blank"> My LinkedIn</a></li>
-					<li><a href="https://github.com/smarkericmark" target="_blank">My GitHub</a></li>
-			</nav></strong>
-		</div>
-<div class="trueBottom">
+	<div class="introduction">
+	
+	<img src="static/pics/profile.jpg" class="propic">
+	
+	<div class="introblurbs">
+	<p class="intro">Not only is the website built by me, but it is also hosted on a cloud server I implemented and configured. </p>
+	<p class="intro">This site exists as a portfolio and a testing ground for my Networking and Programming skill sets!</p>
+	<p class="intro">I am currently looking for full-time work and projects to join. If you are looking for a passionate, fun-loving, security-focused professional, please reach out through LinkedIn. I love connecting with others in the industry.</p>
+
+
+	
+	</div>
+	
+	</div>
+</div>
 </div>
 
+<div class="transitionInfoBox">
+	
+
+	<div class="awaylinks">
+
+			<nav>
+					<span><a href="https://www.linkedin.com/in/markcyberanalyst/" target="_blank">My LinkedIn</a></span></li>
+					<span><a href="https://github.com/smarkericmark" target="_blank">My Github</a></span></li>
+			</nav>
+			<section id="AboutSection">
+
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+<div class="aboutbox">
+
+	
+	<div class="aboutcurvebox">
+</div>
+	<div class="aboutbackgroundbox">
+	</div>
+<div class="about">
+	<div class="abouttitle">
+	
+	<h1>About</h1>
+	<div class="abouttitle">
+	<div class="introduction">
+	<div class="aboutButtonBox">
+
+		<button class="aboutButton" id="currentLifeB" onclick="aboutClickOne()"><span>How I got here</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="aboutClickTwo()"><span>My Previous Life</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="aboutClickThree()"><span>Interests</span></button>
+
+
+	</div>
+
+	<div class="aboutWordBox">
+
+	<div class="nothidden" id="aboutIntroBlurb">
+		<p class="aboutIntro" id=aboutBox><b>Click the Buttons on the Left to Discover More.</b></p>
+		
+	</div>
+
+	<div class="hidden" id="aboutBlurbOne">
+		<p>
+			While working as a Client Service Advisor, I directly aided a corporate client in recovering over $100,000 in stolen funds after the CEO's email was compromised. That incident drew my interest towards Information Security. That interest became a hobby and then a passion. In 2020 I decided to realign my career towards tech while leveraging self-learning with traditional education.
+		</p>
+		<p class="highlightstext">Highlights Include:</p>
+		<ul class="aboutList1">
+  			<li>Achieving a 3.8 GPA in Ryerson’s Computer Security and Digital Forensics program.</li>
+  			<li>Learning tools such as Snort, Wireshark, Autopsy, Splunk, and Volatility to review logs and disc images to identify, understand, prevent threats such as Brute Force Attacks, Malware Infections, and Policy Violations.</li>
+  			<li>Building this site and configuring the cloud server it is hosted on</li>
+		</ul>
+	</div>
+
+	<div class="hidden" id="aboutBlurbTwo">
+		<p>
+			Before deciding to pursue a tech-focused career, I was a finance professional. I started as a part-time teller. Within five years, I was traveling across the states to meet with high-profile commercial clients and present treasury proposals.
+		</p>
+		<p class="highlightstext">Highlights Include</p>
+		<ul class="aboutList2">
+  			<li>Receiving the 2019 Q3 Spotlight Award for the assistance and service provided to critical clients during a complex product migration.</li>
+  			<div class="textOverrun">
+  			<li>Educating and working with clients on setting up Admins, Approvers, and Users on BMO’s Online Banking for Business Platform to ensure sufficient internal controls and fraud prevention.</li>
+  			</div>
+  			<li>Preventing over two million dollars in fraud losses</li>
+  			<li>Training New Coworkers</li>
+		</ul>
+	</div>
+
+	<div class="hidden" id="aboutBlurbThree">
+		<p>
+			When not hunched in front of computer coding and hacking, you can find me partaking in any of the following activities:
+		</p>
+		
+		<ul class="aboutList3">
+  			<li>Boardgaming and online gaming with friends.</li>
+  			<li>Camping and working on my off-grid tiny home cabin.</li>
+  			<li>Taking care of my two rescue dogs, Norbert and Poe.</li>
+  			<li>Reading a sci-fi or fantasy novel.</li>
+  			<li>Playing guitar and waiting for concerts to come back.</li>
+  			<li>Training at the gym.</li>
+		</ul>
+	</div>
+
+	</div>
+	</div>	
+	</div>
+	</section>
+	<section id="EducationSection">
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="edubox">
+
+
+	<div class="educurvebox">
+		
+</div>
+	<div class="edubackgroundbox">
+	</div>
+<div class="about">
+
+	<div class="abouttitle">
+	
+	<h1>Education & Certifications</h1>
+	<div class="abouttitle">
+	<div class="introduction">
+	<div class="aboutButtonBox">
+
+		<button class="aboutButton" id="currentLifeB" onclick="eduClickOne()"><span>Formal</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="eduClickTwo()"><span>Certifications</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="eduClickThree()"><span>Courses</span></button>
+
+
+	</div>
+
+	<div class="eduWordBox">
+
+	<div class="nothidden" id="eduIntroBlurb">
+		<p class="eduIntro" id=eduBox><b>Click the Buttons on the Left to Discover More.</b></p>
+		
+	</div>
+
+	<div class="hidden" id="eduBlurbOne">
+		<div class="educationSpecs">
+		<br>
+		<p><b>Certificate in Computer Security and Digital Forensics</b></p>
+		<p><i>Ryerson University, Toronto, Ontario</i></p>
+		<br>
+		<p><b>Bachelor of Commerce (Honours)</b></p>
+		<p><i>University of Ontario Institute of Technology, Oshawa, Ontario</i></p>
+		<br>
+		<p><b>Business Administration</b></p>
+		<p><i>Durham College, Oshawa, Ontario</i></p>
+	</div>	
+	</div>
+
+
+
+	<div class="hidden" id="eduBlurbTwo">
+		<div class="allcerts"> 
+		<div class="cert">
+		<img src="/static/pics/CompTIA_A_2B.png">
+	</div>
+	<div class="cert">
+		<img src="/static/pics/CompTIA_Network_2B.png">
+	</div>
+	<div class="cert">
+		<img src="/static/pics/CompTIA_Security_2B.png">
+	</div>
+	</div>
+	</div>
+
+	<div class="hidden" id="eduBlurbThree">
+		<p>These courses were critical in helping me establish the foundational knowledge required to start my self-learning journey</p>
+		<div class="courseList">
+		<ul>
+			<li><a href="https://www.udemy.com/course/complete-python-bootcamp" target="_blank"> Complete Python Bootcamp From Zero to Hero in Python by Pierian Data Inc</a></li>
+			<li><a href="https://www.udemy.com/course/linux-privilege-escalation/" target="_blank">Linux Privilege Escalation by Tib3rius</a></li>
+			<li><a href="https://www.udemy.com/course/windows-privilege-escalation/" target="_blank">Windows Privilege Escalation by Tib3rius</a></li>
+			<li><a href="https://www.udemy.com/course/the-python-pro-course/" target="_blank">Advanced Python by Ardit Sulce</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course" target="_blank">Practical Ethical Hacking by TCM Academy</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/windows-privilege-escalation-for-beginners" target="_blank">Windows Privilege Escalation for Beginners by TCM Academy</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/linux-privilege-escalation" target="_blank">Linux Privilege Escalation for Beginners by TCM Academy</a></li>
+			<li><a href="https://academy.tcm-sec.com/p/osint-fundamentals
+" target="_blank">Open-Source Intelligence (OSINT) Fundamentals by TCM Academy</a></li>
+		</ul>
+	</div>
+		
+	</div>
+
+	</div>
+	</div>	
+	</div>
+</div>
+</div>
+</section>
+</div>
+
+
+
+
+
+
+<div class="skillbox">
+	
+	<div class="skillcurvebox">
+</div>
+	<div class="skillbackgroundbox">
+	</div>
+<div class="about">
+	<div class="abouttitle">
+	<section id="SkillSection">
+	<h1>Skills</h1>
+	<div class="abouttitle">
+	<div class="introduction">
+	<div class="aboutButtonBox">
+
+		<button class="aboutButton" id="currentLifeB" onclick="skillClickOne()"><span>Hard Skills</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="skillClickTwo()"><span>Soft Skills</span></button>
+		<button class="aboutButton" id="currentLifeB" onclick="skillClickThree()"><span>Specifics</span></button>
+
+
+	</div>
+
+	<div class="aboutWordBox">
+
+	<div class="nothidden" id="skillIntroBlurb">
+		<p class="skillIntro" id=Box><b>Click the Buttons to Discover More.</b></p>
+		
+	</div>
+
+	<div class="hidden" id="skillBlurbOne">
+		<div class="skillList">
+		<ul>
+  			<li>Virtualization</li>
+  			<li>Privilege Escalation</li>
+  			<li>Fraud Investigation</li>
+  			<li>Network Security</li>
+  			<li>White Hat Hacking</li>
+  			<li>Cloud Deployment & Security</li>
+		</ul>
+	</div>
+	<div class="skillList">
+		<ul>
+  			<li>Client Research</li>
+  			<li>Incident Response</li>
+  			<li>IAM Implementation</li>
+  			<li>Threat Knowledge</li>
+  			<li>Data Analysis</li>
+  			<li>Security Operations & Monitoring</li>
+		</ul>
+	</div>
+	
+	</div>
+
+
+	<div class="hidden" id="skillBlurbTwo">
+		<div class="skillList">
+		<ul>
+  			<li>Public Speaking</li>
+  			<li>Relationship Management</li>
+  			<li>Active Listening</li>
+  			<li>Googling</li>
+  			<li>Friendliness</li>
+  			<li>Mediation</li>
+		</ul>
+	</div>
+	<div class="skillList">
+		<ul>
+  			<li>Curiosity</li>
+  			<li>Self-management</li>
+  			<li>Open-mindedness</li>
+  			<li>Critical Thinking</li>
+  			<li>Self-motivation</li>
+  			<li>Enumeration</li>
+		</ul>
+	</div>
+	
+	</div>
+
+	<div class="hidden" id="skillBlurbThree">
+		<div class="skillList">
+		<ul>
+  			<li>VMware</li>
+  			<li>Active Directory</li>
+  			<li>Google Cloud Platform(GCP)</li>
+  			<li>Linux Servers</li>
+  			<li>Splunk, Wireshark, Snort</li>
+  			<li>HTML,CSS,Javascript</li>
+		</ul>
+	</div>
+	<div class="skillList">
+		<ul>
+  			<li>Go</li>
+  			<li>Python</li>
+  			<li>NMAP & Nessus</li>
+  			<li>Burpsuite</li>
+  			<li>Autopsy & Volatility</li>
+  			<li>Kali Linux</li>
+		</ul>
+	</div>
+	</div>
+
+
+	</div>
+
+	</div>
+	</div>	
+	</div>
+</div>
+</div>
+</div>
+
+</section>
+
+	
+
+<footer>
+	<div class="awaylinks">
+
+			<nav>
+					<span><a href="https://www.linkedin.com/in/markcyberanalyst/" target="_blank">My LinkedIn</a></span></li>
+					<span><a href="https://github.com/smarkericmark" target="_blank">My Github</a></span></li>
+					
+			</nav>
+
+	</div>
+	<div class="truebottom">
+		<div class="thanks">
+		<p>©Copyright 2022</p>
+		</div>
+	</div>
 </footer>
+</body>
+
 </html>
