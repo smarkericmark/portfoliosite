@@ -123,12 +123,14 @@ function skillClickOne() {
 	document.getElementById("skillIntroBlurb").classList.add('hidden');
 	document.getElementById("skillIntroBlurb").classList.remove('nothidden');
 	document.getElementById("skillBlurbTwo").classList.add('hidden');
-	document.getElementById("skilBlurbTwo").classList.remove('nothidden');
+	document.getElementById("skillBlurbTwo").classList.remove('nothidden');
 	document.getElementById("skillBlurbThree").classList.add('hidden');
 	document.getElementById("skillBlurbThree").classList.remove('nothidden');
 
-	
 }
+
+	
+
 
 function skillClickTwo() {
 	//document.getElementById("aboutBox").innerHTML = "Before learning to pursue a tech-focused career, I was a finance professional. I started as a part-time teller. Within five years, I was traveling across the states to meet with high-profile commercial clients and present treasury proposals. Highlights Include:Yada Yada Yada";
